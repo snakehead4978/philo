@@ -6,7 +6,7 @@
 /*   By: snek <snek@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 10:10:50 by snek              #+#    #+#             */
-/*   Updated: 2024/12/24 11:10:55 by snek             ###   ########.fr       */
+/*   Updated: 2024/12/27 03:18:06 by snek             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,6 @@ int	main(int ac, char **av)
 		return (free(final), 1);
 	final->num = 0;
 	pthread_mutex_init(&final->id, 0);
-	threader(philo, final, start);
+	threader(philo, final, start, -1);
 	return (free(final), free(start), 0);
 }

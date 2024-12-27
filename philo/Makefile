@@ -2,13 +2,14 @@ NAME = philo
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror -g3
+CFLAGS = -Wall -Wextra -Werror -g3 
+# CFLAGS += -fsanitize=thread
 
 INC = -I./includes
 
 DIR_SRC = srcs/
 
-SRC = misc.c philo.c threader.c
+SRC = misc.c philo.c threader.c libs.c
 
 MAIN = main.c
 
